@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./imagenes/ChatGPT Image 14 feb 2026, 18_41_04.png" alt=""></div>
+        
+        <ul class="navbar">
+            <li><a href="#catalogo">catalogo</a></li>
+            <li><a href="#reseñas">reseñas</a></li>
+            <li><a href="#contacto">contacto</a></li>
+            <li><a href="#ubicacion">ubicacion</a></li>
+            <li><a href="#faq">faq</a></li>
+        </ul>
+
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+            </svg>
+        </div>
+
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="overlay"></div>
+
+    <section class="inicio-sesion">
+        <div class="contenido-sesion">
+            
+            <div class="close-btn-s">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="icon-sec" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+            </div>
+
+            <div class="modal-inf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                </svg>
+                <h2>bienvenido</h2>
+                <h3>debes inicar sesion para acceder a todas las funciones</h3>
+            </div>
+
+            <div class="modal">
+                <div class="modal-buttons">
+                    <p>si ya tienes una cuenta</p>
+                    <a href="registro.html" class="link"><button class="modal-btn inc">Inicia sesion</button></a>
+                </div>
+    
+                <p>y</p>
+    
+                <div class="modal-buttons">
+                    <p>si no tienes cuenta aun</p>
+                    <a href="registro.html#register" class="link"><button class="modal-btn reg">crea tu cuenta</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <img src="./imagenes/premium_photo-1711448429044-8b5c0f7f3254.avif" alt="">
+        <div class="info-hero">
+            <div class="text-hero">
+                <h1>bienvenido</h1>
+                <h2>Un mundo de sabores por descubrir — mira nuestro catálogo y saborea nuestros productos</h2>
+                <h2>Vive momentos inolvidables en familia</h2>
+            </div>
+            <button class="btn">mas informacion</button>
+        </div>
+    </section>
+
+    <section class="separador">
+        <h2>¿QUÉ QUIERES COMER HOY?</h2>
+    </section>
+
+    <main>
+        <section class="contain" id="catalogo" style="margin-bottom: 100px;">
+            <div class="cards">
+                <div class="img-cards">
+                    <img src="./imagenes/10-MAR-BRAHMAN-01-2 (1).jpg" alt="" class="img-itm">
+                </div>
+                <div class="info">
+                    <span class="price">$12.000</span>
+                    <p class="title">Pastel de Chocolate</p>
+                    <button class="btn-card">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="cards">
+                <div class="img-cards">
+                    <img src="./imagenes/images.jpg" alt="" class="img-itm">
+                </div>
+                <div class="info">
+                    <span class="price">$9.500</span>
+                    <p class="title">Croissant de Mantequilla</p>
+                    <button class="btn-card">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="cards">
+                <div class="img-cards">
+                    <img src="./imagenes/duquesa-blog-productos-que-no-pueden-faltar-productos-de-panaderia.jpg" alt="" class="img-itm">
+                </div>
+                <div class="info">
+                    <span class="price">$8.000</span>
+                    <p class="title">Pan Integral Artesanal</p>
+                    <button class="btn-card">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="cards">
+                <div class="img-cards">
+                    <img src="./imagenes/10-MAR-BRAHMAN-01-2 (1).jpg" alt="" class="img-itm">
+                </div>
+                <div class="info">
+                    <span class="price">$15.000</span>
+                    <p class="title">Torta de Tres Leches</p>
+                    <button class="btn-card">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="cards">
+                <div class="img-cards">
+                    <img src="./imagenes/images.jpg" alt="" class="img-itm">
+                </div>
+                <div class="info">
+                    <span class="price">$6.500</span>
+                    <p class="title">Cupcake de Vainilla</p>
+                    <button class="btn-card">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="cards">
+                <div class="img-cards">
+                    <img src="./imagenes/duquesa-blog-productos-que-no-pueden-faltar-productos-de-panaderia.jpg" alt="" class="img-itm">
+                </div>
+                <div class="info">
+                    <span class="price">$7.000</span>
+                    <p class="title">Roles de Canela</p>
+                    <button class="btn-card">Comprar</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="separador">
+            <h2>ESTO ES LO QUE DICEN NUESTROS CLIENTES</h2>
+        </section>
+    
+        <section class="cart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="icon-origin" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+    
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="icon-change" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </section>
+    
+        <section class="sidebar">
+            <div class="tt">
+                <h3>CARRITO DE COMPRAS</h3>
+            </div>
+            
+            <div class="p-contain"></div>
+    
+            <div class="cart-footer">
+                <span class="total">Precio Total: $0</span>
+                <button class="comprar">Comprar</button>
+            </div>
+        </section>
+
+        <section class="rating" id="reseñas" style="margin-bottom: 100px;">
+            <div class="rating-grid">
+                <div class="txt-r">
+                    <div class="rat-txt">
+                        <h2>10.000+ clientes aman nuestros productos.</h2>
+                        <p>Únete a ellos y conoce el delicioso sabor de nuestros productos. Un lugar donde vivirás experiencias únicas, sabores diferentes y recuerdos inolvidables junto a las personas que más amas. ¿Qué esperas para venir?</p>
+                    </div>
+                </div>
+        
+                <div class="stars">
+                    <div class="cont-stars">
+                        <div class="stras-cont">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        </div>
+                        <p>calificanos con 5 estrellas</p>
+                    </div>
+                    <div class="cont-stars" id="stair">
+                        <div class="stras-cont">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        </div>
+                        <p>calificanos con 5 estrellas</p>
+                    </div>
+                    <div class="cont-stars" id="stair-two">
+                        <div class="stras-cont">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        </div>
+                        <p>calificanos con 5 estrellas</p>
+                    </div>
+                </div>
+        
+                <div class="opinions">
+                    <!-- Opinion 1 -->
+                    <div class="opinions-cont">
+                        <div class="perosnal">
+                            <div class="op-img">
+                                <img src="./imagenes/10-MAR-BRAHMAN-01-2 (1).jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <p>Valentina Ríos</p>
+                                <span>32 años — Medellín</span>
+                            </div>
+                        </div>
+                        <div class="op">
+                            <p>El pan de chocolate es simplemente espectacular. Desde que descubrí TranquiPan no he vuelto a comprar en otra panadería. La calidad de los ingredientes se siente en cada mordida, y el servicio siempre es muy amable y cálido.</p>
+                        </div>
+                    </div>
+
+                    <!-- Opinion 2 -->
+                    <div class="opinions-cont" id="cont">
+                        <div class="perosnal">
+                            <div class="op-img">
+                                <img src="./imagenes/10-MAR-BRAHMAN-01-2 (1).jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <p>Carlos Herrera</p>
+                                <span>45 años — Bello</span>
+                            </div>
+                        </div>
+                        <div class="op">
+                            <p>Pedí una torta personalizada para el cumpleaños de mi hija y superó todas mis expectativas. La decoración fue perfecta y el sabor delicioso. Todos los invitados preguntaron dónde la habíamos comprado. ¡100% recomendado!</p>
+                        </div>
+                    </div>
+
+                    <!-- Opinion 3 -->
+                    <div class="opinions-cont" id="cont-w">
+                        <div class="perosnal">
+                            <div class="op-img">
+                                <img src="./imagenes/10-MAR-BRAHMAN-01-2 (1).jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <p>Mariana Gómez</p>
+                                <span>28 años — Itagüí</span>
+                            </div>
+                        </div>
+                        <div class="op">
+                            <p>Los croissants de mantequilla son los mejores que he probado en toda la ciudad. Vengo cada domingo con mi familia a desayunar y nunca nos decepciona. El ambiente es muy acogedor y los precios son muy accesibles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="separador">
+            <h2>¿SABES DÓNDE ESTAMOS UBICADOS?</h2>
+        </section>
+
+        <div class="map" id="ubicacion">
+            <div class="map-info">
+                <div class="info-map">
+                    <div class="info-maph">
+                        <h2>Nuestros productos en Medellín —</h2>
+                        <h2>Nuestra tienda</h2>
+                    </div>
+                    <div class="line"></div>
+                    <p>Visítanos en el barrio Castilla y conoce nuestros deliciosos productos</p>
+                </div>
+    
+                <div class="ubi-map">
+                    <p>Panaderia TranquiPan - Cómplice que endulza</p>
+                    <p>Carrera 50 #120-13</p>
+                    <p>Barrio Castilla, Medellín</p>
+                    <p>Antioquia, Colombia</p>
+                    <p>como llegar en Google Maps</p>
+                </div>
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15863.144247536622!2d-75.59313654899599!3d6.291824472471425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442ed31dcad1b7%3A0x509213e97253500f!2sTranquiPan%20Bakery!5e0!3m2!1sen!2sco!4v1769546279768!5m2!1sen!2sco" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="frame"></iframe>
+                </div>
+            </div>
+    
+            <div class="redes-info">
+                <div class="redes">
+                    <h2>¿Prefieres el online?</h2>
+                    <div class="line-center"></div>
+                    <p>¡Síguenos en nuestras redes sociales y mantente al día con nuestras noticias y promociones!</p>
+                </div>
+
+                <div class="icons-redes">
+                    <div class="red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+                    </div>
+                    <div class="red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+                    </div>
+                    <div class="red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="tiktok" viewBox="0 0 16 16"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg>
+                    </div>
+                </div>
+
+                <div class="button-red">
+                    <p>O escríbenos directamente</p>
+                    <button class="what">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+                        Chatea por WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section class="separador">
+            <h2>¿TIENES PREGUNTAS?</h2>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="faq-header">
+                <h2>PREGUNTAS FRECUENTES</h2>
+            </div>
+            <div class="faq-cont">
+                
+                <div class="preguntas">
+                    <div class="question">
+                        <div class="question">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+                            <h4 class="ask">¿Los sabores son con receta propia?</h4>
+                        </div>
+                        <div class="svg-f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="anw"><p class="answer">Sí, todos nuestros sabores están basados en recetas propias que desarrollamos a lo largo de muchos años de experiencia, con ingredientes seleccionados y técnicas artesanales que nos diferencian de la competencia.</p></div>
+                    <div class="line-faq"></div>
+                </div>
+
+                <div class="preguntas">
+                    <div class="question">
+                        <div class="question">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+                            <h4 class="ask">¿Hacen pedidos personalizados para eventos?</h4>
+                        </div>
+                        <div class="svg-f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="anw"><p class="answer">¡Claro que sí! Realizamos tortas y productos personalizados para cumpleaños, matrimonios, grados y cualquier celebración especial. Contáctanos con al menos 3 días de anticipación por WhatsApp para coordinar tu pedido.</p></div>
+                    <div class="line-faq"></div>
+                </div>
+
+                <div class="preguntas">
+                    <div class="question">
+                        <div class="question">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+                            <h4 class="ask">¿Tienen opciones sin gluten o sin azúcar?</h4>
+                        </div>
+                        <div class="svg-f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="anw"><p class="answer">Sí, contamos con una línea de productos aptos para personas con restricciones alimentarias. Tenemos pan sin gluten y opciones endulzadas con stevia. Pregunta por nuestro menú especial en tienda o por WhatsApp.</p></div>
+                    <div class="line-faq"></div>
+                </div>
+
+                <div class="preguntas">
+                    <div class="question">
+                        <div class="question">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+                            <h4 class="ask">¿Cuál es el horario de atención?</h4>
+                        </div>
+                        <div class="svg-f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="anw"><p class="answer">Abrimos de lunes a sábado de 6:00 a.m. a 8:00 p.m., y los domingos de 7:00 a.m. a 2:00 p.m. Los días festivos manejamos horario especial que anunciamos por nuestras redes sociales.</p></div>
+                    <div class="line-faq"></div>
+                </div>
+
+                <div class="preguntas">
+                    <div class="question">
+                        <div class="question">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+                            <h4 class="ask">¿Hacen domicilios a toda la ciudad?</h4>
+                        </div>
+                        <div class="svg-f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="anw"><p class="answer">Por el momento realizamos domicilios en el norte de Medellín y municipios cercanos como Bello y Copacabana. También puedes encontrarnos en las plataformas Rappi y PedidosYa para mayor comodidad.</p></div>
+                    <div class="line-faq"></div>
+                </div>
+
+                <div class="preguntas">
+                    <div class="question">
+                        <div class="question">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+                            <h4 class="ask">¿Qué métodos de pago aceptan?</h4>
+                        </div>
+                        <div class="svg-f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="anw"><p class="answer">Aceptamos efectivo, tarjetas débito y crédito, transferencias bancarias y pagos por Nequi y Daviplata. Para pedidos personalizados solicitamos un anticipo del 50% al momento de confirmar el pedido.</p></div>
+                    <div class="line-faq"></div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+
+        <div class="social-icons-footer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg>
+        </div>
+
+        <ul class="menu">
+            <li><a href="#catalogo">catalogo</a></li>
+            <li><a href="#reseñas">reseñas</a></li>
+            <li><a href="#contacto">contacto</a></li>
+            <li><a href="#ubicacion">ubicacion</a></li>
+            <li><a href="#faq">faq</a></li>
+        </ul>
+
+        <p>&copy; 2026 WebDevMd. Santiago Monsalve | Todos los derechos reservados.</p>
+    </footer>
+     
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6988d75667d9f91c3c5a7746/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/faq.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mensaje.js"></script>
+    <script src="./js/cartadd.js"></script>
+    <script src="./js/hamburger.js"></script>
+</body>
+</html>

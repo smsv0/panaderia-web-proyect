@@ -1,0 +1,468 @@
+*
+{
+    padding: 0;
+    /* outline: 1px solid green; */
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flipcard
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 700px;
+    height: 450px;
+    perspective: 1000px;
+    /* margin: 0 auto; */
+    box-shadow: 0px 4px 12px rgba( 0, 0, 0, 0.3);
+}
+
+.flipcard-inner
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform .7s ease;
+    transform-style: preserve-3d;
+}
+
+.flipcard.active .flipcard-inner
+{
+   transform: rotateY(180deg);
+}
+
+.flipcard-front,
+.flipcard-back
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flipcard-front
+{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.contain-img-card
+{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.inf-img
+{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.inf-img h2
+{
+    color: rgb(255, 245, 245);
+    font-size: 2.6rem;
+    font-weight: 900;
+    line-height: 35px;
+    z-index: 2;
+}
+
+.inf-img p
+{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.inf-img button
+{
+    height: 35px;
+    width: 80%;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 5px;
+    outline: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    backdrop-filter: blur(1px);
+}
+
+.singup
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contain-img-card::before
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contain-img-card img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flipcard-back
+{
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+.info-flip-card
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.info-flip-card h2
+{
+    font-size: 2.4rem;
+    color: rgb(249, 45, 79);
+}
+
+.inp-s
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.inp-s input
+{
+    height: 40px;
+    /* background: rgb(224, 224, 224); */
+    border: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(253, 62, 94);
+    outline: none;
+}
+
+.singin 
+{
+    height: 35px;
+    width: 80%;
+    border: none;
+    background-color: pink;
+    border-radius: 5px;
+    outline: 2px solid rgb(248, 106, 129);
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+}
+
+.placeholder
+{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    color: rgb(253, 62, 94);
+    transition: .3s;
+    pointer-events: none;
+}
+
+.input:focus + .placeholder,
+.input:not(:placeholder-shown)
++ .placeholder
+{
+    top: -10px;
+    background-color: #ffffff;
+}
+
+.placeholder-t
+{
+    position: absolute;
+    top: 70px;
+    left: 8px;
+    color: rgb(253, 62, 94);
+    transition: .3s;
+    pointer-events: none;
+}
+
+.input-t:focus + .placeholder-t,
+.input-t:not(:placeholder-shown)
++ .placeholder-t
+{
+    top: 50px;
+    background-color: #ffffff;
+}
+
+.flipcard-back
+{
+    display: flex;
+    /* flex-grow: 1; */
+    width: 100%;
+}
+
+.contain-img-card-back
+{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+}
+
+
+
+.contain-img-card-back::before
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contain-img-card-back img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-flip-card-back
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+    gap: 20px;
+    /* flex: 1; */
+}
+
+.inp-s-back
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.inp-s-back input
+{
+    height: 40px;
+    /* background: rgb(224, 224, 224); */
+    border: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(253, 62, 94);
+    outline: none;
+}
+
+.placeholder-c
+{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    color: rgb(253, 62, 94);
+    transition: .3s;
+    pointer-events: none;
+}
+
+.input-c:focus + .placeholder-c,
+.input-c:not(:placeholder-shown)
++ .placeholder-c
+{
+    transform: translateY(-20px);
+    background-color: #ffffff;
+    color: p;
+}
+
+.placeholder-a
+{
+    position: absolute;
+    top: 70px;
+    left: 8px;
+    color: rgb(253, 62, 94);
+    transition: .3s;
+    pointer-events: none;
+}
+
+.input-a:focus + .placeholder-a,
+.input-a:not(:placeholder-shown)
++ .placeholder-a
+{
+    top: 50px;
+    background-color: #ffffff;
+}
+
+.placeholder-b
+{
+    position: absolute;
+    top: 130px;
+    left: 8px;
+    color: rgb(253, 62, 94);
+    transition: .3s;
+    pointer-events: none;
+}
+
+.input-b:focus + .placeholder-b,
+.input-b:not(:placeholder-shown)
++ .placeholder-b
+{
+    top: 110px;
+    background-color: #ffffff;
+}
+
+.singup-back
+{
+    display: flex;
+    justify-content: center;
+}
+
+.singin-back
+{
+    height: 35px;
+    width: 80%;
+    border: none;
+    background-color: pink;
+    border-radius: 5px;
+    outline: 2px solid rgb(248, 106, 129);
+    cursor: pointer;
+}
+
+.inf-img-back
+{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.inf-img-back h2
+{
+    color: rgb(255, 245, 245);
+    font-size: 2.6rem;
+    font-weight: 900;
+    line-height: 35px;
+    z-index: 2;
+}
+
+.inf-img-back p
+{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.inf-img-back button
+{
+    height: 35px;
+    width: 80%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    outline: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    backdrop-filter: blur(1px);
+}
+
+/* ===== MÓVIL ===== */
+@media (max-width: 700px)
+{
+    .flipcard
+    {
+        height: 700px;
+        width: 300px;
+        margin-top: 300px;
+        outline: 2px solid red;
+    }
+
+    .flipcard-front
+    {
+        flex-direction: column;
+    }
+
+    .contain-img-card
+{
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+    .info-flip-card
+    {
+        width: 100%;
+        /* height: 60%; */
+        flex: 1;
+    }
+
+    .flipcard-back
+    {
+        flex-direction: column;
+    }
+
+    .contain-img-card-back
+    {
+        flex: 1;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .info-flip-card-back
+    {
+        width: 100%;
+        flex: 1;
+        order: 1;
+    }
+
+
+
+}
+
+
+
